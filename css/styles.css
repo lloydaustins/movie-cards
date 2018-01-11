@@ -1,0 +1,135 @@
+/* add your CSS here */
+body {
+  margin: 0px;
+  background-color: #e9e9e9;
+  font-family: 'Arimo', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #010b26;  
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  margin: 0px;
+  font-family: 'Arimo', Arial, sans-serif;
+  font-weight: 200;
+}
+
+h3 {
+  margin-bottom: 0px;
+}
+
+h4 {
+  margin:0px;
+  padding:0px;
+}
+
+.card {
+  max-width: 600px;
+  -webkit-box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px 6px 18px rgba(0, 0, 0, 0.1);  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px 6px 18px rgba(0, 0, 0, 0.1);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  border-radius: 20px;
+  display: inline-block;
+  background-color: #FFFFFF;
+}
+
+.responsive-image {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  max-width:100%;
+}
+
+.galleryContainer {
+  width: 90%;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.galleryItem {
+  color: #797478;
+  font: 10px/1.5 Verdana, Helvetica, sans-serif;
+  float: left;
+  width: 29%;
+  /*margin:  2% 2% 50px 2%;*/
+  margin:  2% 2% 2% 2%;
+}
+
+@media only screen and (max-width : 530px),
+only screen and (max-device-width : 530px){
+  h1 {font-size:22px;}
+  .galleryItem {width: 46%;}
+}
+ 
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+  h1 {font-size:20px;}
+  .galleryItem {width: 96%;}
+  .galleryItem img {width: 96%;}
+  .galleryItem h3 {font-size: 18px;}
+  .galleryItem p, {font-size: 18px;}
+}
+ 
+.galleryItem h3 {
+  text-transform: uppercase;
+}
+ 
+.galleryItem img {
+  max-width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.movie-facts {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.movie-facts ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+/* star rating styles */
+
+.rate-base-layer {
+  color: #aaa;
+}
+
+.rate-hover-layer {
+  color: orange;
+}
+
+.rate2 {
+  font-size: 25px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 300px;
+}
+
+.rate2 .rate-hover-layer {
+  color: #f3db9a;
+}
+        
+.rate2 .rate-select-layer {
+  color: #e0a82f;
+}
+        

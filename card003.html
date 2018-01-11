@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Star Wars | Episode VI - Return of the Jedi</title>
+	<link href="css/styles.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js" charset="utf-8"></script>
+    <script src="js/rater.js" charset="utf-8"></script>
+     <script>
+        $(document).ready(function(){
+            var options = {
+                max_value: 5,
+                step_size: 0.5,
+                selected_symbol_type: 'fontawesome_star',
+            }
+            
+            $(".rate2").rate(options);
+
+            $(".rate2").on("change", function(ev, data){
+                console.log(data.from, data.to);
+            });
+
+            $(".rate2").on("updateError", function(ev, jxhr, msg, err){
+                console.log("This is a custom error event");
+            });
+
+            $(".rate2").rate("setAdditionalData", {id: 42});
+            $(".rate2").on("updateSuccess", function(ev, data){
+                console.log(data);
+            });
+
+        });
+    </script>
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<!-- movie image -->
+			<img class="responsive-image" src="images/return-of-the-jedi.jpg" alt="Star Wars | Episode VI - Return of the Jedi">
+			<!-- movie title -->
+			<h1>Star Wars | Episode VI - Return of the Jedi</h1>
+			<div class="movie-facts">
+				<!-- Star rating -->
+				<div class="rate2"></div>
+				<!-- imdb rating plugin -->
+				<span class="imdbRatingPlugin" data-user="ur84250820" data-title="tt0086190" data-style="p1"><a href="http://www.imdb.com/title/tt0086190/?ref_=plg_rt_1"><img src="http://g-ecx.images-amazon.com/images/G/01/imdb/plugins/rating/images/imdb_46x22.png" alt=" Star Wars: Episode VI - Return of the Jedi
+(1983) on IMDb" />
+</a></span><script>(function(d,s,id){var js,stags=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return;}js=d.createElement(s);js.id=id;js.src="http://g-ec2.images-amazon.com/images/G/01/imdb/plugins/rating/js/rating.min.js";stags.parentNode.insertBefore(js,stags);})(document,'script','imdb-rating-api');</script>
+				<ul>
+					<!-- movie info here -->
+					<li><span class="bold upper">Director</span>: Richard Marquand</li>
+					<li><span class="bold upper">Release date</span>: 1983</li>
+					<li><span class="bold upper">Runtime</span>: 2h 11min</li>
+				</ul>
+				<div class="galleryContainer">
+					<h2>Cast</h2>
+					<div class="galleryItem">
+						<a href="#"><img src="images/mark-hamill.jpg" alt="Mark Hamill | Luke Skywalker" /></a>
+						<h3>Mark Hamill</h3>
+						<h4>Luke Skywalker</h4>
+					</div>
+ 					<div class="galleryItem">
+						<a href="#"><img src="images/harrison-ford.jpg" alt="Harrison Ford | Han Solo" /></a>
+						<h3>Harrison Ford</h3>
+						<h4>Han Solo</h4>
+					</div>
+					<div class="galleryItem">
+						<a href="#"><img src="images/carrie-fisher.jpg" alt="Carrie Fisher | Princess Leia Organa" /></a>
+						<h3>Carrie Fisher</h3>
+						<h4>Princess Leia Organa</h4>
+					</div>
+ 					<div class="galleryItem">
+						<a href="#"><img src="images/peter-cushing.jpg" alt="Peter Cushing | Grand Moff Tarkin" /></a>
+						<h3>Peter Cushing</h3>
+						<h4>Grand Moff Tarkin</h4>
+					</div>
+					<div class="galleryItem">
+						<a href="#"><img src="images/alec-guiness.jpg" alt="Alec Guiness | Ben Obi-Wan Kenobi" /></a>
+						<h3>Alec Guiness</h3>
+						<h4>Ben Obi-Wan Kenobi</h4>
+					</div>
+ 					<div class="galleryItem">
+						<a href="#"><img src="images/anthony-daniels.jpg" alt="Anthony Daniels | C-3PO" /></a>
+						<h3>Anthony Daniels</h3>
+						<h4>C-3PO</h4>
+					</div>
+					<div class="galleryItem">
+						<a href="#"><img src="images/kenny-baker.jpg" alt="Kenny Baker | R2-D2" /></a>
+						<h3>Kenny Baker</h3>
+						<h4>R2-D2</h4>
+					</div>
+ 					<div class="galleryItem">
+						<a href="#"><img src="images/peter-mayhew.jpg" alt="Peter Mayhew | Chewbacca" /></a>
+						<h3>Peter Mayhew</h3>
+						<h4>Chewbacca</h4>
+					</div>
+					<div class="galleryItem">
+						<a href="#"><img src="images/david-prowse.jpg" alt="David Prowse | Darth Vader" /></a>
+						<h3>David Prowse</h3>
+						<h4>Darth Vader</h4>
+					</div>
+ 					<div class="galleryItem">
+						<a href="#"><img src="images/james-earl-jones.jpg" alt="James Earl Jones | Darth Vader (Voice)" /></a>
+						<h3>James Earl Jones</h3>
+						<h4>Darth Vader (Voice)</h4>
+					</div>
+					<div class="galleryItem">
+						<a href="#"><img src="images/frank-oz.jpg" alt="Frank Oz | Yoda (Voice)" /></a>
+						<h3>Frank Oz</h3>
+						<h4>Yoda (Voice)</h4>
+					</div>
+ 					<div class="galleryItem">
+						<a href="#"><img src="images/jeremy-bulloch.jpg" alt="Jeremy Bulloch | Boba Fett" /></a>
+						<h3>Jeremy Bulloch</h3>
+						<h4>Boba Fett</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
